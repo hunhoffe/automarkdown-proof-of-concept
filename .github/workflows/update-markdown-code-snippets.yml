@@ -3,10 +3,8 @@ on: [push]
 jobs:
   Update-Markdown-Code-Snippets:
     runs-on: ubuntu-latest
-    steps:
-    - name: Markdown autodocs
-    - uses: dineshsonachalam/markdown-autodocs@v1.0.7
-      with:
-        # Optional, but recommended
-        # Defaults to "Apply automatic changes"
-        commit_message: Apply automatic updates for markdown code snippets
+    uses: dineshsonachalam/markdown-autodocs@v1.0.7
+    with:
+      # Optional, but recommended
+      # Defaults to "Apply automatic changes"
+      commit_message: Apply automatic updates for markdown code snippets
