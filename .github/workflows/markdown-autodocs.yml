@@ -1,0 +1,8 @@
+name: markdown-autodocs
+
+on:
+  workflow_run:
+    workflows:
+      - markdown-autodocs-action
+    types:
+      - completed
